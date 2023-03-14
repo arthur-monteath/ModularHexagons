@@ -59,7 +59,7 @@ public class Panel extends JPanel {
 		 */
 		int[][] init = {
 				{	0,0,1,0,0	},
-				{	 0,1,1,0,0  },
+				{	 0,1,1,0,1  },
 				{	0,1,1,1,0   },
 				{	 1,1,1,1,0	},
 				{	1,1,1,1,1	},
@@ -69,7 +69,7 @@ public class Panel extends JPanel {
 				{	0,0,1,0,0	}
 		}; 
 		/*
-		 *  if you rotate this 90° to the left it will turn into the figure you want.
+		 *  The end result is rotated 90° clockwise + mirrored in the init array.
 		 */
 		
 		Grid hexGrid = new Grid(init, 50,50,16);
